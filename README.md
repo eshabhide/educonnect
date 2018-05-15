@@ -1,2 +1,2 @@
-# educonnect
-SE project : Students reserve spots based on Tutors schedule
+node node_modules\nodemon\bin\nodemon.js index.js
+node index.js

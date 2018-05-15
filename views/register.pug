@@ -1,0 +1,42 @@
+html
+  include header.pug
+  include navbar.pug
+    
+  div.container.mainContent
+    .row
+      .col-sm-3 
+      .col-sm-6
+        form
+          .form-group.row
+            label.col-sm-3(for='inputEmail') Email
+            .col-sm-9
+              input#inputEmail.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter Email')
+          .form-group.row
+            label.col-sm-3(for='inputName') Name
+            .col-sm-9
+              input#inputName.form-control(type='text', aria-describedby='emailHelp', placeholder='Enter Full name')
+          .form-group.row
+            label.col-sm-3(for='inputPassword') Password
+            .col-sm-9
+              input#inputPassword.form-control(type='password', placeholder='Password')
+          .form-group.row
+            legend.col-form-label.col-sm-3.pt-0 Radios
+            .col-sm-9
+              .form-check
+                input#gridRadios1.form-check-input(type='radio', name='custtype', value='Tutor', checked='')
+                label.form-check-label(for='gridRadios1')
+                  | Tutor
+              .form-check
+                input#gridRadios2.form-check-input(type='radio', name='custtype', value='Student')
+                label.form-check-label(for='gridRadios2')
+                  | Student
+          button.btn.btn-primary(id='submit' type='button') Register
+        
+        .alert.alert-success(role='alert', id='succ', style="display:none")
+          | 
+        .alert.alert-danger(role='alert', id='err', style="display:none")
+          | 
+
+      .col-sm-3
+  include footer.pug
+  script(src="js/register.js")

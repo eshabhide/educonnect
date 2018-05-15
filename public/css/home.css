@@ -1,0 +1,43 @@
+#feedback { font-size: 1.4em; }
+
+#selectable .ui-selecting {
+  background: #20c997
+}
+
+#selectable .ui-selected {
+  background: #28a745;
+  color: white;
+}
+
+#selectable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+#selectable li {
+  margin: 4px;
+  padding: 1px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  font-size: 1.4em;
+  text-align: center;
+  vertical-align:middle;
+}
+
+#selectable:first-child {
+  margin-left: 0px;
+}
+
+#submitTime {
+  margin-top: 10px;
+}
+
+div.card-body {
+  padding: 0px;
+}
+
+div.card {
+  border: 1px solid white;
+}

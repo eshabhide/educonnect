@@ -1,0 +1,19 @@
+body
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    div.container
+      a.navbar-brand(href='/') Edu Connect
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/home')
+              | Home 
+              span.sr-only (current)
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='/login') Login
+          li.nav-item
+            a.nav-link(href='/register') Register
+          li.nav-item
+            a.nav-link(href='/logout') Logout

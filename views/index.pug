@@ -1,0 +1,48 @@
+html
+  include header.pug
+  include navbar.pug
+  div.container.mainContent
+    .row
+      .col-lg
+        .card
+          img.card-img-top(src='images/header_000.jpg', alt='Card image cap')
+
+    hr
+
+    .row
+      .col-sm
+        .card
+          img.card-img-top(src='images/header_001.jpg', alt='Card image cap')
+          .card-body
+            p.card-text
+              | Study Groups
+      .col-sm
+        .card
+          img.card-img-top(src='images/header_002.jpg', alt='Card image cap')
+          .card-body
+            p.card-text
+              | Personal Tutoring
+      .col-sm
+        .card
+          img.card-img-top(src='images/header_003.jpg', alt='Card image cap')
+          .card-body
+            p.card-text
+              | Discussion Forum
+      
+    hr
+
+    .row
+      .col-sm
+        .card
+          h5.card-header Login
+          .card-body
+            p.card-text Login to view the forums
+            a.btn.btn-primary(href='/login') Login
+      .col-sm
+        .card
+          h5.card-header Register
+          .card-body
+            p.card-text Register and create an account
+            a.btn.btn-primary(href='/register') Register
+
+  include footer.pug

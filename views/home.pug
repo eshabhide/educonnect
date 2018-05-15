@@ -1,0 +1,45 @@
+html
+  include header.pug
+  link(rel="stylesheet" href="css/bootstrap-datepicker3.min.css")
+  link(rel='stylesheet', href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+  link(rel="stylesheet", href="css/datatables.min.css")
+  link(rel="stylesheet", href="css/dataTables.bootstrap4.min.css")
+  link(rel='stylesheet', href='https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css')
+  link(rel='stylesheet', href='https://cdn.datatables.net/select/1.2.5/css/select.dataTables.min.css')
+  link(rel='stylesheet', href='css/home.css')
+  
+  include navbar.pug
+    
+  div.container.mainContent
+    #content
+      .row
+        .col-sm-3
+          #dropdown
+        .col-sm-6
+        .col-sm-3(style="text-align:right")
+          #username
+      .row(style="margin-top: 20px")
+        .col-sm-3
+          #datepicker
+        .col-sm-9#timeData(style="display:none")
+          .alert.alert-success(role='alert')
+            | Please click on hours you are available
+          #timeGrid
+          button#submitTime.btn.btn-success(type='button', style="display:none") Enter Time
+      .row(style="margin-top: 20px")
+        .col-sm-12
+          .card
+            .card-header.text-white.bg-secondary.mb-3 Tutor's Appointments
+            .card-body
+              #ownTable
+  include footer.pug
+
+  script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+  script(src="js/bootstrap-datepicker.min.js")
+  script(src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js")
+  script(src="https://cdn.datatables.net/select/1.2.5/js/dataTables.select.min.js")
+
+  script(type="text/javascript").
+    inputData = !{respData};
+  script(src="js/home.js")
+  
